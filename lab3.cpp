@@ -23,6 +23,10 @@ void mystrcpy(char* str1, char* str2){
 	strcpy(str1,str2);
 }
 
+void mystrcat(char* str1, char* str2){
+	strcat(str1,str2);
+}
+
 int main(){
   char str1[100]="Hello";
   char str2[100]="hello";
@@ -31,6 +35,6 @@ int main(){
   
   mystrcmp(str1, str2);
   mystrcpy(str1, str2);
+  mystrcat(str1, str2);
   cout<<str1;
 }
-
