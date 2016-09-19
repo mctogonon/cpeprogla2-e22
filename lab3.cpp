@@ -28,13 +28,23 @@ void mystrcat(char* str1, char* str2){
 }
 
 int main(){
-  char str1[100]="Hello";
-  char str2[100]="hello";
+  char str1[100];
+  char str2[100];
   //strcpy(str1,"Hello there");
   //cout << yo(str1);
   
+  cout << "Enter a first word: ";
+  cin >> str1;
+  
+  cout << "Enter a second word: ";
+  cin >> str2;
+  
   mystrcmp(str1, str2);
-  mystrcpy(str1, str2);
+  cout<< "\n";
+  
   mystrcat(str1, str2);
-  cout<<str1;
+  cout<<str1<<endl;
+  
+  mystrcpy(str1, str2);
+  cout << str1 << endl;
 }
