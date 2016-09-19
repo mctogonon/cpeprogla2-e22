@@ -1,0 +1,34 @@
+#include <stdlib.h>
+#include <iostream>
+#include<time.h>
+
+using namespace std;
+
+#define N 20
+
+int main() {
+    int ran_num[N];   
+     
+    srand(time(0));  
+      
+    for (int i=0; i<20; i++){
+        ran_num[i] = i;  
+    }
+     
+     
+        for (int i=0; i<(20-1); i++){
+            int r = i + (rand() % (20-i)); 
+            int temp = ran_num[i]; 
+            ran_num[i] = ran_num[r]; 
+            ran_num[r] = temp;
+        }
+         
+        for (int c=0; c<10; c++){
+             cout<< "  " << (" %d ", ran_num[c]);  
+        }
+         
+        cout << "\n";
+    
+   system("PAUSE");
+   return 0;
+}
