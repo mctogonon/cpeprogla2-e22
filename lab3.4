@@ -1,0 +1,34 @@
+#include<iostream>
+#include<cstring>
+
+using namespace std;
+
+main(){
+    char damn[20];
+    int me, haba;
+    int goal = 0;
+    
+  cout <<"************************"<<endl;
+	cout <<"PALINDROME"<<endl;
+	cout <<"************************"<<endl;
+    
+    cout<<endl;
+    cout << "Enter a string: ";
+    cin >> damn;
+    
+    haba = strlen(damn);
+    
+    for(me=0; me < haba ;me++){
+        if(damn[me] != damn[haba-me-1]){
+            goal = 1;
+            break;
+	   }
+	}
+    
+    if (goal) {
+        cout << endl << damn << " is not a palindrome" << endl; 
+    }    
+    else {
+        cout <<endl << damn << " is a palindrome" << endl; 
+    }
+}
