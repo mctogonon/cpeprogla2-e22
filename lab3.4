@@ -4,8 +4,8 @@
 using namespace std;
 
 main(){
-    char damn[20];
-    int me, haba;
+    char pal[20];
+    int t, len;
     int goal = 0;
     
   cout <<"************************"<<endl;
@@ -14,21 +14,21 @@ main(){
     
     cout<<endl;
     cout << "Enter a string: ";
-    cin >> damn;
+    cin >> pal;
     
-    haba = strlen(damn);
+    len = strlen(pal);
     
-    for(me=0; me < haba ;me++){
-        if(damn[me] != damn[haba-me-1]){
+    for(t=0; t < len ;t++){
+        if(pal[t] != pal[len-t-1]){
             goal = 1;
             break;
 	   }
 	}
     
     if (goal) {
-        cout << endl << damn << " is not a palindrome" << endl; 
+        cout << endl << pal << " is not a palindrome" << endl; 
     }    
     else {
-        cout <<endl << damn << " is a palindrome" << endl; 
+        cout <<endl << pal << " is a palindrome" << endl; 
     }
 }
