@@ -1,27 +1,35 @@
 #include<iostream>
+#include<string>
 #include<cstring>
 
 using namespace std;
 
 main(){
 	char str[100];
+	int i;
 
 	cout<<"Enter some String: ";
 	//cin.ignore();
 	cin.getline(str, 100);
 
+	str[0]=toupper(str[0]);
+
+       for(i=1;i<strlen(str);i++){
+	
+			if(isspace(str[i])){
+				i++;
+				str[i]=toupper(str[i]);
+			}
+			else{
+				str[i]=tolower(str[i]);
+			}
+		}	
+       // cout<<str[0];
+        
+       // for(i=1;strlen(str);i++){
+        	cout<<str;
+		//} 	
+
+}
 
 
-       for(int i=0;i<strlen(str);i++){
-	   
-	    if(str[i]==' ')
-         str[i+1]=toupper(str[i+1]);
-        else
-         str[0]=toupper(str[0]);
-		
-	   }
-      
-
-        cout<<str<<endl<<endl<<endl;
-
-	}
