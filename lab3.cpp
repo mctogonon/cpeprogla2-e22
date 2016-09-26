@@ -43,7 +43,7 @@ int main(){
   cout <<endl;
   
 	cout <<"************************"<<endl;
-	cout <<"String Compare"<<endl;
+	cout <<"STRING COMPARE"<<endl;
 	cout <<"************************"<<endl;
   
   mystrcmp(str1, str2);
@@ -51,14 +51,14 @@ int main(){
   cout<< endl <<endl << endl;
   
 	cout <<"************************"<<endl;
-	cout <<"String Concatination"<<endl;
+	cout <<"STRING CONCATINATION"<<endl;
 	cout <<"************************"<<endl;
   
   mystrcat(str1, str2);
   cout<<str1<<endl<<endl <<endl <<endl;
   
 	cout <<"************************"<<endl;
-	cout <<"String Copy"<<endl;
+	cout <<"STRING COPY"<<endl;
 	cout <<"************************"<<endl;
   
   mystrcpy(str1, str2);
