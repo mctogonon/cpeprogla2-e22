@@ -11,7 +11,7 @@ int main(){
 		int num = 0;
 		for(int x=1; x<input; x++){
 		if(x%3==0 || x%5 == 0){
-			num+=x;
+			num += x;
 			}
 		}
 	  cout << endl << num << endl;
