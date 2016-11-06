@@ -9,7 +9,7 @@ int rnd(double value){
 	return round(floor(value));
 }
 
-int main(){
+void p1(){
 	double value;
 	char answer;
 		cout<<"Enter a number to be round of: ";
@@ -17,6 +17,4 @@ int main(){
 		cout<<"Round off value: "<<round(value)<<endl;
 		cin>>answer;
 		
-	system("pause");
-	return 0;
 }
